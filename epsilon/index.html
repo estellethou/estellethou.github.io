@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/fdc1e81c64.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/epsilon.css">
+        <title>Epsilon app</title>
+    </head>
+
+    <body>
+
+         <!--Language button-->
+
+        <ul class="social">
+            <li id="fr_click" class="button_lang current_lang">Fr</li>
+            <li id="en_click" class="button_lang">En</li>
+        </ul>
+
+        <!--Tittle-->
+
+        <h1 class="en"> CAN I GIVE IT TO MY CAT ?</h1>
+        <h1 class="fr"> PUIS JE LE DONNER A MON CHAT ?</h1>
+        <div class="container">
+
+            <img class="chat" src="static/cat_eat.jpg" alt="chaton qui mange">
+
+            <!--Search bar-->
+
+            <div class="form">
+                <input id="searchbar" onkeyup="search_food()" type="text"
+                name="search" placeholder="Search food..">
+            </div>
+
+                <!-- ordered list -->
+            <div id='list'> 
+
+                <div class="food">
+                <p class="en" >APPLE</p>
+                <p class="fr" >POMME</p>
+                    <div class="food_items"> 
+                        <div class='giveItToMyCat en'> 🟢 Yes </div>
+                        <div class='quantity en'> In little quantity </div>
+                        <div class='baked" en'> Raw </div>
+                        <div class='giveItToMyCat fr'> 🟢 Oui </div>
+                        <div class='quantity fr'> En petite quantité </div>
+                        <div class='baked fr'> Cru </div>
+                        <img class="apple" src="static/apple.jpg" alt="raw apple">
+                    </div>
+                </div>
+
+                <div class="food">
+                <p class="en">APRICOT</p>
+                <p class="fr">ABRICOT</p>
+                    <div class="food_items"> 
+                        <div class='giveItToMyCat en'> 🟢 Yes </div>
+                        <div class='quantity en'> In little quantity </div>
+                        <div class="baked en"> Raw </div>
+                        <div class='giveItToMyCat fr'> 🟢 Oui </div>
+                        <div class='quantity fr'> En petite quantité </div>
+                        <div class="baked fr"> Cru </div>
+                        <img class="apricot" src="static/apricot.jpg" alt="raw apricot">
+                    </div>
+                </div>
+
+                <div class="food">
+                    <p class="en">ASPERGUS</p>
+                    <p class="fr">ASPERGE</p>
+                        <div class="food_items"> 
+                            <div class='giveItToMyCat en'> 🔴 No ! This is TOXIC  </div>
+                            <div class='giveItToMyCat fr'> 🔴 Non ! Ceci est TOXIQUE </div>
+                            <img class="aspergus" src="static/aspergus.jpg" alt="raw aspergus">
+                        </div>
+                    </div>
+
+                <div class="food">
+                    <p class="en">AVOCADO</p>
+                    <p class="fr">AVOCAT</p>
+                        <div class="food_items"> 
+                            <div class='giveItToMyCat en'> 🔴 No ! This is TOXIC  </div>
+                            <div class='giveItToMyCat fr'> 🔴 Non ! Ceci est TOXIQUE </div>
+                            <img class="avocado" src="static/avocado.png" alt="raw avocado">
+                        </div>
+                    </div>
+
+                <div class="food">
+                    <p class="en">BANANA</p>
+                    <p class="fr">BANANE</p>
+                        <div class="food_items"> 
+                            <div class='giveItToMyCat en'> 🟢 Yes </div>
+                            <div class='quantity en'> In little quantity </div>
+                            <div class="baked en"> Raw </div>
+                            <div class='giveItToMyCat fr'> 🟢 Oui </div>
+                            <div class='quantity fr'> En petite quantité </div>
+                            <div class="baked fr"> Cru </div>
+                            <img class="banana" src="static/banana.jpg" alt="raw banana">
+                        </div>
+                    </div>
+
+                <div class="food">
+                    <p class="en">CHERRY</p>
+                    <p class="fr">CERISE</p>
+                        <div class="food_items"> 
+                            <div class='giveItToMyCat en'> 🟢 Yes </div>
+                            <div class='quantity en'> In little quantity </div>
+                            <div class="baked en"> Raw </div>
+                            <div class='giveItToMyCat fr'> 🟢 Oui </div>
+                            <div class='quantity fr'> En petite quantité </div>
+                            <div class="baked fr"> Cru </div>
+                            <img class="cherry" src="static/cherry.jpg" alt="raw cherry">
+                        </div>
+                    </div>
+
+                    <div class="food">
+                        <p class="en">MELON</p>
+                        <p class="fr">MELON</p>
+                            <div class="food_items"> 
+                                <div class='giveItToMyCat en'> 🟢 Yes </div>
+                                <div class='quantity en'> As your cat wants </div>
+                                <div class="baked en"> Raw </div>
+                                <div class='giveItToMyCat fr'> 🟢 Oui </div>
+                                <div class='quantity fr'> Pas de limite </div>
+                                <div class="baked fr"> Cru </div>
+                                <img class="melon" src="static/melon.jpg" alt="raw melon">
+                            </div>
+                        </div>
+
+                <div class="food">
+                    <p class="en">GREEN BEAN</p>
+                    <p class="fr">HARICOT VERT</p>
+                        <div class="food_items"> 
+                            <div class='giveItToMyCat en'> 🟢 Yes </div>
+                            <div class='quantity en'> As your cat wants </div>
+                            <div class="baked en"> Cooked </div>
+                            <div class='giveItToMyCat fr'> 🟢 Oui </div>
+                            <div class='quantity fr'> Pas de limite </div>
+                            <div class="baked fr"> Cuit </div>
+                            <img class="green_bean" src="static/green_bean.jpg" alt="raw green bean">
+                        </div>
+                    </div>
+                
+                <div class="food">
+                    <p class="en" >PINEAPPLE</p>
+                    <p class="fr" >ANANAS</p>
+                        <div class="food_items"> 
+                            <div class='giveItToMyCat en'> 🟢 Yes </div>
+                            <div class='quantity en'> In little quantity </div>
+                            <div class='baked en'> Raw </div>
+                            <div class='giveItToMyCat fr'> 🟢 Oui </div>
+                            <div class='quantity fr'> En petite quantité </div>
+                            <div class='baked fr'> Cru </div>
+                            <img class="ananas" src="static/ananas.png" alt="raw ananas">
+    
+                        </div>
+                    </div>
+
+                <div class="food">
+                    <p class="en">STRAWBERRY</p>
+                    <p class="fr">FRAISE</p>
+                        <div class="food_items"> 
+                            <div class='giveItToMyCat en'> 🟢 Yes </div>
+                            <div class='quantity en'> As your cat wants </div>
+                            <div class="baked en"> Raw </div>
+                            <div class='giveItToMyCat fr'> 🟢 Oui </div>
+                            <div class='quantity fr'> Pas de limite </div>
+                            <div class="baked fr"> Cru </div>
+                            <img class="strawberry" src="static/strawberry.jpg" alt="raw strawberry">
+                        </div>
+                    </div>
+
+                    <div class="food">
+                        <p class="en">WATERMELON</p>
+                        <p class="fr">PASTEQUE</p>
+                            <div class="food_items"> 
+                                <div class='giveItToMyCat en'> 🟢 Yes </div>
+                                <div class='quantity en'> As your cat wants </div>
+                                <div class="baked en"> Raw </div>
+                                <div class='giveItToMyCat fr'> 🟢 Oui </div>
+                                <div class='quantity fr'> Pas de limite </div>
+                                <div class="baked fr"> Cru </div>
+                                <img class="watermelon" src="static/watermelon.jpg" alt="raw watermelon">
+                            </div>
+                        </div>
+
+            </div> 
+
+            <footer>
+                <p class="en"> ⚠️ Warning : This website is only a collection of information from several sites about cats and advice from veterinarians. 
+                    This information is for guidance only and is generally valid if your cat does not present abnormal symptoms related to their diet. 
+                    If your cat has some allergies, check first with you veterinarians before using this website. </p>
+                
+                <p class="en"> ⚖️ The quantity given to your cats depend on the diet you submit it them. First, try with little quantity and check if there 
+                    is no allergic reaction or abnormal faeces before giving more. </p>
+                </footer-->
+            
+            <!-- linking javscript -->
+            <script src="js/epsilon.js"></script> 
+        </div>
+        
+
+    </body>
+</html>

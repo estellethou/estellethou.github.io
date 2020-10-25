@@ -1,0 +1,294 @@
+@charset "UTF-8";
+.en {
+  display: none;
+}
+
+.button_lang {
+  background-color: #444;
+  color: #FFF;
+  padding: 8px 20px;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button_lang:hover, .current_lang {
+  background-color: #777;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  -ms-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+ul li {
+  width: auto;
+  display: inline;
+}
+
+@font-face {
+  font-family: Open_sans;
+  src: url(../static/Open_Sans/OpenSans-Light.ttf);
+}
+html {
+  font-size: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #6fc5be;
+  margin-top: 2rem;
+}
+
+.chat {
+  margin-bottom: 2%;
+  width: 40%;
+}
+
+.ananas {
+  width: 6%;
+}
+
+.apple {
+  width: 8%;
+}
+
+.apricot {
+  width: 9%;
+}
+
+.aspergus {
+  width: 12%;
+}
+
+.avocado {
+  width: 13%;
+}
+
+.banana {
+  width: 10%;
+}
+
+.cherry {
+  width: 8%;
+}
+
+.green_bean {
+  width: 15%;
+}
+
+.strawberry {
+  width: 10%;
+}
+
+.melon {
+  width: 11%;
+}
+
+.watermelon {
+  width: 10%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+}
+
+body {
+  font-family: Open_sans;
+  width: 95%;
+  height: 100%;
+  background-color: white;
+  color: #a7a7a7;
+  overflow-x: hidden !important;
+}
+
+.form input {
+  border-radius: 100rem;
+  font-family: Open_sans;
+  outline: none;
+  margin-bottom: 1.5rem;
+}
+
+#searchbar {
+  font-size: 80%;
+}
+
+#list {
+  width: 100%;
+  list-style: none;
+}
+
+.quantity::before {
+  content: "🥣  ";
+}
+
+.baked::before {
+  content: "🍴  ";
+}
+
+.food {
+  border: 2px solid #6fc5be;
+  border-radius: 0.8rem;
+  padding: 1%;
+  margin-top: 1%;
+}
+.food p {
+  text-align: center;
+  color: white;
+  margin-top: -1.5rem;
+  background: #4fcac0;
+}
+.food .food_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+footer {
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+}
+
+@media (min-width: 10px) and (max-width: 639px) {
+  .container {
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 90%;
+  }
+
+  #list {
+    margin-left: 0.1rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0rem;
+  }
+
+  .form {
+    width: 60%;
+    font-size: 0.9rem;
+  }
+  .form input {
+    border: 0.1rem solid #a7a7a7;
+    width: 100%;
+    transition: border 50ms;
+  }
+  .form input:hover {
+    border: 0.15rem solid #6fc5be;
+  }
+
+  .food {
+    height: 3rem;
+    width: 98%;
+    margin-bottom: 8%;
+  }
+  .food p {
+    font-size: 1rem;
+    width: 50%;
+    margin-top: -1rem;
+  }
+  .food .food_items {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .container {
+    font-size: 7rem;
+    padding: 0.5rem;
+  }
+
+  #list {
+    margin-left: 0.1rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 0rem;
+  }
+
+  .form {
+    width: 60%;
+    font-size: 2rem;
+    margin-bottom: 2%;
+  }
+  .form input {
+    border: 0.1rem solid #a7a7a7;
+    width: 100%;
+    transition: border 50ms;
+  }
+  .form input:hover {
+    border: 0.4rem solid #6fc5be;
+  }
+
+  .food {
+    height: 8rem;
+    margin-bottom: 4%;
+  }
+  .food p {
+    font-size: 2rem;
+    width: 25%;
+    margin-top: -1.6rem;
+  }
+  .food .food_items {
+    font-size: 2rem;
+  }
+
+  footer {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1365px) {
+  .container {
+    font-size: 1.8rem;
+    padding: 2rem;
+  }
+
+  #list {
+    margin-left: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: -2rem;
+  }
+
+  .form {
+    width: 50%;
+  }
+  .form input {
+    border: 0.1rem solid #a7a7a7;
+    padding: 0.5rem 2rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    transition: border 50ms;
+  }
+  .form input:hover {
+    border: 0.2rem solid #6fc5be;
+  }
+
+  .food {
+    margin-bottom: 4%;
+    height: 10rem;
+  }
+  .food p {
+    font-size: 2rem;
+    width: 20%;
+    margin-top: -1.7rem;
+  }
+  .food .food_items {
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=epsilon.css.map */
